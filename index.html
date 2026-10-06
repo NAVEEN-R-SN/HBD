@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="app">
+
+    <!-- Screen 1: Chat -->
+    <section id="chatScreen" class="screen chat-screen active">
+
+        <div class="chat-window">
+
+            <header class="chat-header">
+                <div class="profile-image">💖</div>
+
+                <div>
+                    <h1>My Special Person</h1>
+                    <p>online now</p>
+                </div>
+            </header>
+
+            <div class="chat-messages">
+
+                <div class="message">
+                    Hi Varshini Garu 💗
+                </div>
+
+                <div class="message">
+                    I know you have been really tired recently,
+                    so I wanted to do this for you 🥰🥰
+                </div>
+
+                <div class="message">
+                    You deserve a little surprise today 💕
+                </div>
+
+                <div class="message">
+                    I made something special for you.
+                </div>
+
+                <button id="openSurpriseButton"
+                        class="surprise-button">
+                    Open your surprise 💌
+                </button>
+
+            </div>
+
+            <footer class="chat-footer">
+                Made with love ❤️
+            </footer>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 2: Birthday opening -->
+    <section id="openingScreen" class="screen opening-screen">
+
+        <div class="floating-heart floating-heart-one">♥</div>
+        <div class="floating-heart floating-heart-two">♥</div>
+        <div class="floating-heart floating-heart-three">♥</div>
+        <div class="floating-heart floating-heart-four">♥</div>
+        <div class="floating-heart floating-heart-five">♥</div>
+
+        <div class="heart-tree">
+
+            <div class="tree-trunk"></div>
+
+            <span class="tree-heart tree-heart-one">♥</span>
+            <span class="tree-heart tree-heart-two">♥</span>
+            <span class="tree-heart tree-heart-three">♥</span>
+            <span class="tree-heart tree-heart-four">♥</span>
+            <span class="tree-heart tree-heart-five">♥</span>
+            <span class="tree-heart tree-heart-six">♥</span>
+            <span class="tree-heart tree-heart-seven">♥</span>
+            <span class="tree-heart tree-heart-eight">♥</span>
+            <span class="tree-heart tree-heart-nine">♥</span>
+
+        </div>
+
+        <div class="opening-text">
+
+            <p class="eyebrow">
+                A little surprise for you
+            </p>
+
+            <h2>
+                Happy Birthday,
+                <span>Varshini Garu</span> 💕
+            </h2>
+
+            <p>
+                and just like that, you're turning
+                <span>25</span> ✨
+            </p>
+
+        </div>
+
+        <button id="continueButton"
+                class="continue-button">
+            Tap anywhere to continue
+        </button>
+
+    </section>
+
+    <!-- Screen 3: Cake -->
+    <section id="cakeScreen" class="screen cake-screen">
+
+        <div id="confettiContainer"></div>
+
+        <div class="cake-content">
+
+            <p class="eyebrow">
+                First things first 🎂
+            </p>
+
+            <h2>
+                Happy Birthday,
+                <span>Varshini Garu</span>!
+            </h2>
+
+            <div id="cake" class="cake">
+
+                <div class="cake-bottom"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-top"></div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+
+            </div>
+
+            <p id="candleHint"
+               class="instruction">
+                Tap the candle to make a wish ✨
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 4: Balloons -->
+    <section id="balloonScreen" class="screen balloon-screen">
+
+        <div class="balloon-heading">
+
+            <p class="eyebrow">
+                A few things I want you to know
+            </p>
+
+            <h2>
+                Pop the balloons 🎈
+            </h2>
+
+            <p>
+                Every balloon has a little message for you.
+            </p>
+
+        </div>
+
+        <div id="birthdayBalloonContainer"
+             class="birthday-balloon-container">
+        </div>
+
+        <p id="birthdayBalloonProgress"
+           class="birthday-balloon-progress">
+            0 of 6 balloons popped
+        </p>
+
+        <div id="birthdayMessagePopup"
+             class="birthday-message-popup hidden">
+
+            <div class="birthday-popup-card">
+
+                <button id="birthdayClosePopup"
+                        class="birthday-close-popup"
+                        aria-label="Close message">
+                    ×
+                </button>
+
+                <div id="birthdayPopupEmoji"
+                     class="birthday-popup-emoji">
+                    💖
+                </div>
+
+                <p id="birthdayPopupMessage"></p>
+
+                <button id="birthdayPopupContinue"
+                        class="birthday-popup-continue">
+                    Continue 💕
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 5: Final message -->
+    <section id="finalScreen" class="screen final-screen">
+
+        <div class="final-content">
+
+            <div class="final-heart">
+                💖
+            </div>
+
+            <p class="eyebrow">
+                One last thing...
+            </p>
+
+            <h2>
+                You are truly special,
+                <span>Varshini Garu</span> ✨
+            </h2>
+
+            <p class="final-message">
+                No matter how tired or difficult life feels,
+                please remember that you are loved, appreciated,
+                and never alone.
+            </p>
+
+            <p class="final-message">
+                I hope this new year of your life brings you
+                happiness, peace, success, and beautiful memories.
+            </p>
+
+            <p class="final-signature">
+                With lots of love,<br>
+                Your favorite person ❤️
+            </p>
+
+            <button id="galleryButton"
+                    class="final-button">
+                See our memories 📸
+            </button>
+
+            <button id="restartButton"
+                    class="secondary-button">
+                See it again 🔄
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Screen 6: Photo gallery -->
+    <section id="galleryScreen" class="screen gallery-screen">
+
+        <div class="gallery-content">
+
+            <p class="eyebrow">
+                Some beautiful memories
+            </p>
+
+            <h2>
+                Our Memory Wall 📸
+            </h2>
+
+            <p class="gallery-subtitle">
+                Every picture holds a special moment.
+            </p>
+
+            <div id="photoGallery"
+                 class="photo-gallery">
+            </div>
+
+            <button id="galleryBackButton"
+                    class="secondary-button">
+                Back to birthday message 💖
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Image popup -->
+<div id="imageModal"
+     class="image-modal hidden"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Large memory image">
+
+    <button id="closeImageModal"
+            class="close-image-modal"
+            aria-label="Close image">
+        ×
+    </button>
+
+    <img id="modalImage"
+         src=""
+         alt="Large memory">
+
+</div>
+
+<!-- Background music -->
+<audio id="birthdayMusic" loop>
+    <source src="audio/birthday-song.mp3"
+            type="audio/mpeg">
+</audio>
+
+<!-- Music button -->
+<button id="musicButton"
+        class="music-button">
+    🎵 Play music
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
